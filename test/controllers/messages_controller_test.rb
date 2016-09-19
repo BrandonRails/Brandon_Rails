@@ -20,8 +20,8 @@ class MessagesControllerTest < ActionDispatch::IntegrationTest
   last_email = ActionMailer::Base.deliveries.last
 
   assert_equal "hi", last_email.subject
-  assert_equal 'stephen@example.com', last_email.to[0]
-  assert_equal 'cornholio@example.com', last_email.from[0]
+  assert_equal 'brandon.stevens001@gmail.com', last_email.to[0]
+  assert_equal 'brandon@example.com', last_email.from[0]
   assert_match(/bai/, last_email.body.to_s)
 
   ActionMailer::Base.deliveries.clear
