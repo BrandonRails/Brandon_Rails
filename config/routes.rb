@@ -7,9 +7,10 @@ Rails.application.routes.draw do
 
   get '/contact', to: 'static_pages#contact'
 
-  get '/portfolio', to: 'static_pages#portfolio'
+  #get '/portfolio', to: 'static_pages#portfolio'
 	
-  #get '/messages', to: 'static_pages#messages'
+  #get '/form', to: 'static_pages#form'
+
 
   resources :messages, only: [:new, :create]
 end
